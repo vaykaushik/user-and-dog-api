@@ -6,7 +6,7 @@
 
 **What do I want to understand next?**
 
-1 - How to use 'useEffect' in combination with useState to dyanamically display a query based on what the user has typed.
+1 - How to use 'useEffect' in combination with 'useState' to dyanamically display a query based on what the user has typed.
 
 **What were the challenges of this project?**
 
