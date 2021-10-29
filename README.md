@@ -1,3 +1,5 @@
+A live link can be found here: https://react-api-practice.netlify.app/
+
 **What was the goal of this project?**
 
 1 - To understand the basics of 'useState' and how it can be used to display relevant data pulled from an API.
