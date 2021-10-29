@@ -1,4 +1,4 @@
-A live link can be found here: https://react-api-practice.netlify.app/
+A live link can be viewed here: https://react-api-practice.netlify.app/
 
 **What was the goal of this project?**
 
