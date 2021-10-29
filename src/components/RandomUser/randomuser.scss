@@ -9,11 +9,22 @@
     flex-direction: column;
     min-height: 100vh;
 
+    .header__intro {
+        padding-bottom: 3rem;
+        font-size: 1rem;
+        padding: 1rem 15%;
+        line-height: 1.5;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
     h1 {
         font-family: typography.$serif;
         font-size: 2rem;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 0;
     }
 
     p {
@@ -22,6 +33,10 @@
         font-family: typography.$sans-serif;
         font-size: 1.5rem;
         line-height: 0;
+
+        span {
+            font-weight: bold;
+        }
     }
 
     button {

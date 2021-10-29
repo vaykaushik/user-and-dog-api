@@ -4,12 +4,14 @@ import './sass/styles.scss';
 
 // All Components
 
-import Header from './components/Header/Header';
+import RandomUser from './components/RandomUser/RandomUser'; // Random User API
+import RandomDogs from './components/RandomDogs/RandomDogs'; // Dog API
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <RandomUser/>
+      <RandomDogs/>
     </div>
   );
 }

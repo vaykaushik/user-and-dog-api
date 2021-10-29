@@ -1,17 +1,18 @@
-import './header.scss';
+import './randomuser.scss';
 
 import axios from 'axios';
 
 import { useState } from 'react';
 
-const Header = () => {
+const RandomUser = () => {
 
-    const [name, setName] = useState('Random Person');
+    const [name, setName] = useState('');
     const [money, setMoney] = useState('');
 
     const getName = () => {
         axios.get('https://randomuser.me/api')
             .then(response => {
+                console.log(response.data);
                 const data = response.data;
                 const userData = data.results[0];
                 setName(`${userData.name.first} ${userData.name.last}`);
@@ -25,12 +26,13 @@ const Header = () => {
     return (
         <header className="header">
             <h1>Random Net Worth Generator</h1>
+            <p className="header__intro">Press the <span>'Show person'</span> button to retreive the name of a random person from the randomuser.me API and the <span>'Show wealth'</span> button to generate a random number.</p>
             <button onClick={getName}>Show person</button>
             <button onClick={getMoney}>Show wealth</button>
-            <p>Full Name: <span className="name">{name}</span></p>
-            <p>Net Worth: {new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(money)}</p>
+            <p>Full Name: <span>{name}</span></p>
+            <p>Net Worth: <span>{new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'GBP' }).format(money)}</span></p>
         </header>
     );
 };
 
-export default Header;
+export default RandomUser;
